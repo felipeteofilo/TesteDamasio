@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>svapi_prod</key>
+	<string>http://api.sambavideos.sambatech.com/v1/</string>
+	<key>svapi_stage</key>
+	<string>http://staging.sambavideos.sambatech.com/v1/</string>
+	<key>svapi_dev</key>
+	<string>http://web1.qa.sambatech.com:10000/v1/</string>
+	<key>svapi_token_prod</key>
+	<string>ec8f5393-8e54-4ef2-842e-3f6cf0ea6287</string>
+	<key>svapi_token_dev</key>
+	<string>08008acb-c9b8-4452-af78-2d36d83db640</string>
+	<key>myjson_endpoint</key>
+	<string>https://api.myjson.com/bins/</string>
+	<key>pid_4421</key>
+	<string>bc6a17435f3f389f37a514c171039b75</string>
+	<key>pid_4460</key>
+	<string>36098808ae444ca5de4acf231949e312</string>
+	<key>pid_6050</key>
+	<string>2893ae96e3f2fade7391695553400f80</string>
+	<key>pid_543</key>
+	<string>664a1791fa5d4b0861416d0059da8cda</string>
+	<key>pid_562</key>
+	<string>b00772b75e3677dba5a59e09598b7a0d</string>
+	<key>pid_5952</key>
+	<string>1190b8e6d5e846c0c749e3db38ed0dcf</string>
+	<key>pid_5719</key>
+	<string>2dcbb8a0463215c2833dd7b178bc05da</string>
+</dict>
+</plist>

@@ -1,0 +1,14 @@
+framework module SambaPlayer {
+	umbrella header "SambaPlayer.h"
+	
+	export *
+	module * { export * }
+	
+	//link framework "AVFoundation"
+	
+	header "GMFContentPlayhead.h"
+	header "GMFSlider.h"
+	header "UIButton+GMFTintableButton.h"
+	header "UIImage+GMFTintableImage.h"
+	header "UILabel+GMFLabels.h"
+}

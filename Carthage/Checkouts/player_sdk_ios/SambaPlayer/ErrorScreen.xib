@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ErrorScreen" customModule="SambaPlayer" customModuleProvider="target">
+            <connections>
+                <outlet property="iconView" destination="d70-AG-PZk" id="QuS-1D-XQ6"/>
+                <outlet property="retryButton" destination="WG1-g5-nTn" id="eCo-6I-ayO"/>
+                <outlet property="textField" destination="a5T-on-sfd" id="hVc-Hb-HZs"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Gah-uV-4Px"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HF6-WJ-ZhP">
+                    <rect key="frame" x="8" y="268" width="359" height="131"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="player_error.png" translatesAutoresizingMaskIntoConstraints="NO" id="d70-AG-PZk">
+                            <rect key="frame" x="143.5" y="0.0" width="72" height="37"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error message..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="a5T-on-sfd">
+                            <rect key="frame" x="117" y="47" width="125" height="37"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="1H0-gD-n0G"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WG1-g5-nTn">
+                            <rect key="frame" x="107" y="94" width="145" height="37"/>
+                            <state key="normal" image="retry.png"/>
+                            <connections>
+                                <action selector="retryHandler" destination="-1" eventType="touchUpInside" id="bDQ-Ll-oSP"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="HF6-WJ-ZhP" secondAttribute="trailing" constant="8" id="O8e-uv-X8n"/>
+                <constraint firstItem="HF6-WJ-ZhP" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jGg-6I-RVf"/>
+                <constraint firstItem="HF6-WJ-ZhP" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="qSA-hB-yrr"/>
+                <constraint firstItem="HF6-WJ-ZhP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="srf-VW-nf8"/>
+            </constraints>
+            <point key="canvasLocation" x="26.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="player_error.png" width="72" height="37"/>
+        <image name="retry.png" width="145" height="31"/>
+    </resources>
+</document>

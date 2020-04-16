@@ -1,0 +1,19 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "2.1.1",
+  "iOS" : [
+    {
+      "name" : "SambaPlayer",
+      "hash" : "baa1635d03bc6d913ce59fe3737cd2df6cdb82fd24cec8d07015e3430bf9a700",
+      "swiftToolchainVersion" : "5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+    }
+  ]
+}
